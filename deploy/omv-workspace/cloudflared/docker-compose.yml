@@ -16,7 +16,7 @@
 
 services:
   cloudflared:
-    image: cloudflare/cloudflared:latest
+    image: cloudflare/cloudflared:2026.10.7
     container_name: cloudflared-omv
     restart: unless-stopped
     ports:

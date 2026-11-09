@@ -151,7 +151,7 @@ services:
       - "mail.cloudless.gr:192.168.1.130"
 
   collabora:
-    image: collabora/code:26.04.4.2.1
+    image: collabora/code:26.04.6.1.1
     container_name: collabora
     restart: unless-stopped
     ports:
@@ -169,7 +169,7 @@ services:
     dns: [1.1.1.1, 8.8.8.8]
 
   talk-hpb:
-    image: nextcloud/aio-talk:20261014_095932
+    image: nextcloud/aio-talk:20261109_101109
     container_name: nextcloud-talk-hpb
     restart: unless-stopped
     init: true
@@ -188,7 +188,7 @@ services:
     dns: [1.1.1.1, 8.8.8.8]
 
   talk-recording:
-    image: nextcloud/aio-talk-recording:latest
+    image: nextcloud/aio-talk-recording:20261109_101109
     container_name: nextcloud-talk-recording
     restart: unless-stopped
     init: true
